@@ -11,7 +11,7 @@
     "allowImportingTsExtensions": true,
     "erasableSyntaxOnly": true,
     "skipLibCheck": true,
-    "types": ["vite/client", "node"]
+    "types": ["vite/client"]
   },
-  "include": ["src", "server", "astryx-themes.js", "vite.config.ts"]
+  "include": ["src", "astryx-themes.js", "vite.config.ts"]
 }

@@ -125,7 +125,7 @@ def _resolve_startup_channels(raw_channel):
         entries.extend(instances)
 
     if not entries:
-        entries = ["web"]
+        entries = ["trip"]  # trip-ai: was "web" (console removed)
     return entries
 
 
@@ -445,7 +445,7 @@ def _clear_singleton_cache(channel_name: str):
     a new instance can be created with updated config.
     """
     cls_map = {
-        "web": "channel.web.web_channel.WebChannel",
+        "trip": "channel.trip.trip_channel.TripChannel",  # trip-ai: replaces "web"
         "wechatmp": "channel.wechatmp.wechatmp_channel.WechatMPChannel",
         "wechatmp_service": "channel.wechatmp.wechatmp_channel.WechatMPChannel",
         "wechatcom_app": "channel.wechatcom.wechatcomapp_channel.WechatComAppChannel",
@@ -809,7 +809,7 @@ def run():
         sigterm_handler_wrap(signal.SIGTERM)
 
         # Parse channel_type into a list
-        raw_channel = conf().get("channel_type", "web")
+        raw_channel = conf().get("channel_type", "trip")
 
         if "--cmd" in sys.argv:
             channel_names = ["terminal"]

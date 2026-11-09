@@ -240,7 +240,7 @@ available_setting = {
     "clear_memory_commands": ["#清除记忆"],  # session-reset command; must start with #
     # channel config
     "channel_type": "",  # channel type; supports running multiple channels at once. Single: "feishu", multiple: "feishu, dingtalk" or ["feishu", "dingtalk"]. Options: web,feishu,dingtalk,wecom_bot,weixin,wechatmp,wechatmp_service,wechatcom_app,wechat_kf,telegram,slack,discord
-    "web_console": True,  # whether to auto-start the Web console (on by default). Set False to disable
+    "web_console": False,  # trip-ai: web console removed;  # whether to auto-start the Web console (on by default). Set False to disable
     "subscribe_msg": "",  # subscribe message; supported by: wechatmp, wechatmp_service, wechatcom_app
     "debug": False,  # whether to enable debug mode; prints more logs when on
     "appdata_dir": "",  # data directory

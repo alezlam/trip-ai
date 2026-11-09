@@ -61,9 +61,9 @@ def _build_channel(channel_type, multi_instance) -> Channel:
     if channel_type == "terminal":
         from channel.terminal.terminal_channel import TerminalChannel
         ch = TerminalChannel()
-    elif channel_type == 'web':
-        from channel.web.web_channel import WebChannel
-        ch = WebChannel()
+    elif channel_type == 'trip':  # trip-ai: replaces the web console channel
+        from channel.trip.trip_channel import TripChannel
+        ch = TripChannel()
     elif channel_type == "wechatmp":
         from channel.wechatmp.wechatmp_channel import WechatMPChannel
         ch = WechatMPChannel(passive_reply=True)
