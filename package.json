@@ -1,0 +1,40 @@
+{
+  "name": "trip-ai",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "node --watch server/index.ts & vite",
+    "build": "tsc && vite build",
+    "start": "NODE_ENV=production node server/index.ts",
+    "astryx": "astryx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alezlam/trip-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/alezlam/trip-ai/issues"
+  },
+  "homepage": "https://github.com/alezlam/trip-ai#readme",
+  "dependencies": {
+    "@astryxdesign/cli": "^0.7.11",
+    "@astryxdesign/core": "^0.7.11",
+    "@astryxdesign/theme-neutral": "^0.7.11",
+    "@hono/node-server": "^2.1.6",
+    "@stylexjs/stylex": "^0.19.1",
+    "hono": "^4.13.17",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6"
+  }
+}
